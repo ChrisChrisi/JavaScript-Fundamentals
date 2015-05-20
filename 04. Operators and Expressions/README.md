@@ -136,3 +136,5 @@ _Examples:_
 | 2    | 1.5  | yes                     |
 | 1    | 2.5  | yes                     |
 | -100 | -100 | no                      |
+
+### The unit tests are made with `nodeunit` - https://github.com/caolan/nodeunit
