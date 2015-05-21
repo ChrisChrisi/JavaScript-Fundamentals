@@ -8,7 +8,7 @@
  | -1 | true  |
  | 0  | false |
  */
-var checkOdd = require("./checkOdd.js").checkOdd;
+var checkOdd = require("./1.checkOdd.js").checkOdd;
 exports.testOdd3 = function (test) {
     test.equal(true, checkOdd(3));
     test.done();
