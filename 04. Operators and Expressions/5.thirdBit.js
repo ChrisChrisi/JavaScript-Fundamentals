@@ -11,4 +11,11 @@ var thirdBit = function(number){
     return (number >> 3) & 1;
 };
 
+//console.log("The third bit of 5 is: " + thirdBit(5));
+//console.log("The third bit of 8 is: " + thirdBit(8));
+//console.log("The third bit of 0 is: " + thirdBit(0));
+//console.log("The third bit of 15 is: " + thirdBit(15));
+//console.log("The third bit of 5343 is: " + thirdBit(5343));
+//console.log("The third bit of 62241 is: " + thirdBit(62241));
+
 exports.thirdBit = thirdBit;
