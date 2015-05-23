@@ -1,5 +1,12 @@
 "use strict";
 
+/*
+ To Run these tests:
+ - you should have nodeJS installed
+ - you should have nodeunit installed (install via npm: npm install nodeunit -g)
+ - run the test: nodeunit nameOfTheFile.js
+ */
+
 /**
  |    n    | Third digit 7? |
  |:-------:|:--------------:|
