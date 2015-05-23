@@ -1,5 +1,5 @@
 # JavaScript-Fundamentals
-Repository for the Telerik Academy JavaScript Fundamental Course
+Repository for the Telerik Academy JavaScript Fundamental Course - http://telerikacademy.com/Courses/Courses/Details/239
 
 For the unit test for the probles is used `nodeunit` - https://github.com/caolan/nodeunit
 
