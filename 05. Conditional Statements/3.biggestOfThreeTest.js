@@ -40,6 +40,6 @@ exports.test_0_n2p5_5 = function(test){
 };
 
 exports.test_n0p1_n0p5_n1p1 = function(test){
-    test.equal(-0.1, biggestOfThree(-0.1, -0.5, -0.1));
+    test.equal(-0.1, biggestOfThree(-0.1, -0.5, -1.1));
     test.done();
 };
