@@ -15,4 +15,10 @@ var exchangeIfGreater = function(a, b){
     return a + " " + b;
 };
 
+var testValues = [[5,2], [3, 4], [5.5, 4.5]];
+
+//testValues.forEach(function(value){
+//    console.log("Exchange if greater on " + value[0] + " and " + value[1] + ": " + exchangeIfGreater(value[0], value[1]));
+//});
+
 exports.exchangeIfGreater = exchangeIfGreater;
