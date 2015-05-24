@@ -8,9 +8,9 @@
 
 var exchangeIfGreater = function(a, b){
   if(a > b){
-      a = a + b;  // x now becomes 15
-      b = a - b;  // y becomes 10
-      a = a - b;  // x becomes 5
+      a = a + b;
+      b = a - b;
+      a = a - b;
   }
     return a + " " + b;
 };
