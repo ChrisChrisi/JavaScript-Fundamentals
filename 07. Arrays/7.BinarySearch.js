@@ -3,10 +3,8 @@
 /**
  * ### Problem 7. Binary search ###
  *    Write a script that finds the index of given element in a sorted array of integers by using the
- *    [binary search](http://en.wikipedia.org/wiki/Binary_search_algorithm) algorithm.
+ *    binary search algorithm.
  */
-
-//findIndex([1, 4, 6, 7, 12, 13, 15, 18, 19, 20, 22, 24], 20);
 
 var binarySearch = function (arr, elem) {
     var minI = 0,

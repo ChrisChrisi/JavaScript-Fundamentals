@@ -35,5 +35,10 @@ var selectionSort = function (arr) {
     return sortArr;
 };
 
-console.log(selectionSort([64, 25, 12, 22, 11]));
-console.log(selectionSort([5, 1, 12, -5, 16, 2, 12, 14]));
+var testValues = [[64, 25, 12, 22, 11],
+                  [5, 1, 12, -5, 16, 2, 12, 14]];
+
+testValues.forEach(function(value){
+    console.log('Sorted ['+value + '] is:');
+    console.log(selectionSort(value));
+});
