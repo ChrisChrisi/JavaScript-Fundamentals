@@ -6,6 +6,10 @@
  */
 
 var deepCopy = function(obj){
+    //if the given element has simple type just return it
+    if(typeof obj !== 'object' && !(obj[i] === null )){
+        return obj;
+    }
     var i,
         elem,
         result = {};
