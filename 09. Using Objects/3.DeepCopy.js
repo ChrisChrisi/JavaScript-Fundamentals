@@ -13,7 +13,7 @@ var deepCopy = function(obj){
         result = [];
     }
     for(i in obj){
-        if(typeof obj[i] == 'object' && !(obj[i] === null )){
+        if(typeof obj[i] === 'object' && !(obj[i] === null )){
             elem = deepCopy(obj[i]);
         } else {
             elem = obj[i];
