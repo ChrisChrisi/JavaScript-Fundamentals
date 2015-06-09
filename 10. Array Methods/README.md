@@ -1,47 +1,127 @@
-Array Methods
-=============
+Strings
+=======
 
-### Problem 1. Make person
-*	Write a function for creating persons.
-	*	Each person must have **firstname**, **lastname**, **age** and **gender** (true is female, false is male)
-    * 	Generate an array with ten person with different names, ages and genders
-
-### Problem 2. People of age
-*	Write a function that checks if an array of person contains only people of age (with age 18 or greater)
-	*	Use **only array methods** and no regular loops (for, while)
-
-### Problem 3. Underage people 
-*	Write a function that prints all underaged persons of an array of person
-	*	Use **Array#filter** and **Array#forEach**
-	*	Use **only array methods** and no regular loops (for, while)
-
-### Problem 4. Average age of females
-*	Write a function that calculates the average age of all females, extracted from an array of persons
-	*	Use **Array#filter**
-	*	Use **only array methods** and no regular loops (for, while)
-
-### Problem 5. Youngest person
-*	Write a function that finds the youngest male person in a given array of people and prints his full name
-	*	Use **only array methods** and no regular loops (for, while)
-	*	Use **Array#find**
-
-### Problem 6. Group people
-*   Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object
-    *   Use **Array#reduce**
-    *   Use **only array methods** and no regular loops (for, while)
+### Problem 1. Reverse string
+*	Write a JavaScript function that reverses a string and returns it.
 
 _Example:_
 
-        result = {
-            'a': [{
-                firstname: 'Asen',
-                /* ... */
-            }, {
-                firstname: 'Anakonda',
-                /* ... */
-            }],
-            'j': [{
-                firstname: 'John',
-                /* ... */
-            }]
-        };
+|  input | output |
+|:------:|:------:|
+| sample | elpmas |
+
+### Problem 2. Correct brackets
+*	Write a JavaScript function to check if in a given expression the brackets are put correctly.
+
+_Example of correct expression:_ `((a+b)/5-d)`.
+_Example of incorrect expression:_ `)(a+b))`.
+
+### Problem 3. Sub-string in text
+*	Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+		
+_Example:_
+
+The target sub-string is `in`
+
+The text is as follows:
+We are liv**in**g **in** an yellow submar**in**e. We don't have anyth**in**g else. **in**side the submar**in**e is very tight. So we are dr**in**k**in**g all the day. We will move out of it **in** 5 days.
+
+The result is: `9`
+	
+### Problem 4. Parse tags
+*	You are given a text. Write a function that changes the text in all regions:
+
+		<upcase>text</upcase> to uppercase.
+		<lowcase>text</lowcase> to lowercase
+		<mixcase>text</mixcase> to mix casing(random)
+
+_Example:_ We are `<mixcase>living</mixcase>` in a `<upcase>yellow submarine</upcase>`. We `<mixcase>don't</mixcase>` have `<lowcase>anything</lowcase>` else.
+
+_The expected result:_		
+We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.
+
+_Note: Regions can be nested._
+
+### Problem 5. nbsp
+*	Write a function that replaces non breaking white-spaces in a text with `&nbsp`;
+
+### Problem 6. Extract text from HTML
+*	Write a function that extracts the content of a html page given as text.
+*	The function should return anything that is in a tag, without the tags.
+
+_Example:_
+
+	<html>
+	  <head>
+	    <title>Sample site</title>
+	  </head>
+	  <body>
+	    <div>text
+	      <div>more text</div>
+	      and more...
+	    </div>
+	    in body
+	  </body>
+	</html>
+
+_Result:_ Sample sitetextmore textand more...in body
+
+### Problem 7. Parse URL
+*	Write a script that parses an URL address given in the format: `[protocol]://[server]/[resource]`
+	and extracts from it the `[protocol]`, `[server]` and `[resource]` elements.
+*	Return the elements in a JSON object.
+
+_Example:_ 
+
+|                 URL                  |                                     result                                     |
+|:------------------------------------:|:----------------------------------------------------------------------------------------:|
+| `http://telerikacademy.com/Courses/Courses/Details/239` |  { protocol: `http`, <br> server: `telerikacademy.com` <br> resource: `/Courses/Courses/Details/239` |
+
+### Problem 8. Replace tags
+*	Write a JavaScript function that replaces in a HTML document given as string all the tags `<a href="…">…</a>` with corresponding tags `[URL=…]…/URL]`.
+
+_Example:_
+
+| input | output |
+|:-----:|:------:|
+| `<p>Please visit <a href="http://academy.telerik.com">our site</a> to choose a training course. Also visit <a href="www.devbg.org">our forum</a> to discuss the courses.</p>` | `<p>Please visit [URL=http://academy.telerik.com]our site[/URL] to choose a training course. Also visit [URL=www.devbg.org]our forum[/URL] to discuss the courses.</p>` |
+
+### Problem 9. Extract e-mails
+*	Write a function for extracting all email addresses from given text.
+*	All sub-strings that match the format <identifier>@<host>…<domain> should be recognized as emails.
+*	Return the emails as array of strings.
+
+### Problem 10. Find palindromes
+*	Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".
+
+### Problem 11. String format
+*	Write a function that formats a string using placeholders.
+*	The function should work with up to 30 placeholders and all types.
+
+_Examples:_
+
+	var str = stringFormat('Hello {0}!', 'Peter'); 
+	//str = 'Hello Peter!';
+
+	var frmt = '{0}, {1}, {0} text {2}';
+	var str = stringFormat(frmt, 1, 'Pesho', 'Gosho');
+	//str = '1, Pesho, 1 text Gosho'
+
+### Problem 12. Generate list
+*	Write a function that creates a HTML `<ul>` using a template for every HTML `<li>`.
+*	The source of the list should be an array of elements.
+*	Replace all placeholders marked with –{…}– with the value of the corresponding property of the object.
+
+_Example:_ 
+_HTML:_ 
+
+	<div data-type="template" id="list-item">
+	 <strong>-{name}-</strong> <span>-{age}-</span>
+	/div>
+	
+_JavaScript:_ 
+
+	var people = [{name: 'Peter', age: 14},…];
+	var tmpl = document.getElementById('list-item').innerHtml;
+	var peopleList = generateList(people, template);
+	//peopleList = '<ul><li><strong>Peter</strong> <span>14</span></li><li>…</li>…</ul>'
