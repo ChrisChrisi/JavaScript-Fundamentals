@@ -1,10 +1,10 @@
-Using Objects
+Array Methods
 =============
 
 ### Problem 1. Make person
-*	Write a functio for creating persons.
+*	Write a function for creating persons.
 	*	Each person must have **firstname**, **lastname**, **age** and **gender** (true is female, false is male)
-* 	Generate an array with ten person with different names, ages and genders
+    * 	Generate an array with ten person with different names, ages and genders
 
 ### Problem 2. People of age
 *	Write a function that checks if an array of person contains only people of age (with age 18 or greater)
